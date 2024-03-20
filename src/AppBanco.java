@@ -4,13 +4,13 @@ public class AppBanco {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         //Classe para dados pessoais e operações bancárias
-        class ContaBancaria {
+        class Cliente {
             private String nome;
             private String sobrenome;
             private String cpf;
             private Double saldo;
 
-            public ContaBancaria(String nome, String sobrenome, String cpf) {
+            public Cliente(String nome, String sobrenome, String cpf) {
                 this.nome = nome;
                 this.sobrenome = sobrenome;
                 this.cpf = cpf;
@@ -44,7 +44,7 @@ public class AppBanco {
         System.out.println("Digite seu CPF: ");
         String cpf = scanner.nextLine();
 
-        ContaBancaria conta = new ContaBancaria(nome, sobrenome, cpf);
+        Cliente conta = new Cliente(nome, sobrenome, cpf);
 
         //Exibição do menu
         int opcao;
